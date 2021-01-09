@@ -17,7 +17,6 @@ let podcastList = [];
 io.on("connection", (socket) => {
   console.log("User Socket Connected");
 
-  //TODO:yeni birisi baglandiginda socket tekrar event atiyo ve yayin yapanada gidiyo duzelt
   socket.emit("podcastList", podcastList);
 
   //eger yeni bir podcast baslarsa podcastListe ye ekle ve emit et
@@ -35,7 +34,6 @@ io.on("connection", (socket) => {
 
   //birileri podcaste katilirsa ilgili kanala ilet
   socket.on("joinPodcast", function (podcastId, peerId) {
-    //TODO:calismiyor bu kisima bak
     socket.join(socket.id);
     socket.to(podcastId).broadcast.emit("user-connected", peerId);
 
