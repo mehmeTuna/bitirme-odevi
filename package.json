@@ -1,0 +1,22 @@
+{
+  "name": "node-basic",
+  "version": "0.0.1",
+  "description": "Simple application",
+  "main": "server.js",
+  "author": "Tuna",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "2.8.5",
+    "express": "^4.10.8",
+    "ffmpeg-static": "^2.3.0",
+    "fluent-ffmpeg": "2.1.2",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "nodemon": "^2.0.2",
+    "socket.io": "3.0.3",
+    "socket.io-stream": "^0.9.1"
+  }
+}
