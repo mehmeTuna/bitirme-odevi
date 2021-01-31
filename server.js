@@ -7,7 +7,7 @@ const io = require("socket.io")(server);
 require("socket.io-stream")(io);
 
 app.get("/", function (req, res) {
-  res.send("asdasd");
+  res.send("Api");
 });
 
 server.listen(1453);
